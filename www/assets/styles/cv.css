@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+
+  --primary: rgb(188, 255, 158);
+  --primary-light: rgb(233, 255, 213);
+  --neutral: #bbb;
+  --neutral-light: #dadada;
+  --neutral-dark: #888;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+}

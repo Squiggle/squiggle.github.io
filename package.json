@@ -1,0 +1,30 @@
+{
+  "name": "squiggle.github.io",
+  "version": "1.0.0",
+  "description": "Personal site for github.com/squiggle",
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev --es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squiggle/squiggle.github.io.git"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.7.27-4",
+    "@types/node": "^9.6.0"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.2",
+    "@stencil/utils": "latest"
+  },
+  "author": "Jonathan Gilroy-Powell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/squiggle/squiggle.github.io/issues"
+  },
+  "homepage": "https://github.com/squiggle/squiggle.github.io#readme"
+}
