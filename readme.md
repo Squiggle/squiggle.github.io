@@ -9,13 +9,13 @@ A static HTML page for a Curriculum Vitae
 - Semantic mark-up, showcasing Web Components
 - Link to repository as a portfolio piece
 
-# Content
+# Outline
 
 Sections:
 - Header
-- Profile
-- Skills
-- Career & Portfolio
+- Profile: "Who I am"
+- Skills: "What I do"
+- Portfolio & Career
 
 Components:
 
@@ -31,3 +31,9 @@ Components:
   - Arrow (direction, gradient, label)
   - Tag (name, h-position, link, icon?)
 - Portfolio (name, description, image, link)
+
+# Content
+
+## Portfolio
+
+[Design Guidelines](https://gist.github.com/Squiggle/fa034a74cb204c977cabe1a1ef37f5ec)
