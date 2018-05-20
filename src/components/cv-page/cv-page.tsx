@@ -8,20 +8,17 @@ import { Component } from '@stencil/core';
   tag: 'cv-page',
   styles: `
     cv-page {
-      display: block;
+      display: flex;
+      flex-flow: column nowrap;
       min-height: 100%;
-      max-width: 600px;
-      margin: 0 auto 0 auto;
-      box-shadow: 4px 0 8px rgba(1,1,1,0.1), -4px 0 8px rgba(1,1,1,0.1)
+      margin: 0 2rem;
     }
   `
 })
 export class CvPage {
   render() {
     return (
-      <div>
-        <slot />
-      </div>
+      <slot />
     );
   }
 }

@@ -21,8 +21,12 @@ export class CvHeaderSection {
     return (
       <header>
         <div>
-          <h1><slot name="title" /></h1>
-          <div class="cv-header--subheading"><slot name="subtitle" /></div>
+          <h1>
+            <slot name="title" />
+            <div class="subheading cv-header--subheading">
+              <slot name="subtitle" />
+            </div>
+          </h1>
         </div>
         <div>
           <slot />

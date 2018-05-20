@@ -13,7 +13,7 @@
   </head>
   <body>
     <cv-page>
-      <cv-header>
+      <cv-header class="theme-background--neutral-lighter">
         <span slot="title">My Name Here</span>
         <span slot="subtitle">Subtitle</span>
         <cv-header-meta>
@@ -23,21 +23,21 @@
           <div>Stackoverflow <a title="Stackoverflow profile for Me" href="https://stackoverflow.com/">https://github.com/</a></div>
         </cv-header-meta>
       </cv-header>
-      <section>
-        <h2>Profile</h2>
+      <section class="theme-background--neutral-light theme-font--neutral-darker">
+        <h2 class="theme-font--black">Profile</h2>
         <p>
             Bacon ipsum dolor amet ut est nulla spare ribs fugiat beef t-bone ut eu boudin do ball tip beef ribs elit. Qui drumstick buffalo, tenderloin aliqua landjaeger excepteur pastrami ball tip short ribs t-bone venison mollit. Doner sunt labore commodo ad. Magna meatloaf porchetta, lorem do turducken labore pancetta venison laboris brisket short ribs elit alcatra ribeye. Laborum pancetta fugiat anim occaecat buffalo.
         </p>
       </section>
-      <section>
-        <h2>Skills</h2>
+      <section class="theme-background--neutral theme-font--neutral-darker">
+        <h2 class="theme-font--black">Skills</h2>
         <p>Intro paragraph</p>
         <h3>Subsection One</h3>
         
         <!--
           _tag cloud to be presented on a left/right scale_
         --> 
-        <cv-tag-cloud>
+        <cv-tag-cloud class="font-m">
           <span slot="left-arrow">scale_left</span>
           <span slot="right-arrow">scale_right</span>
           a, b, c, d, e, f, g, h, i

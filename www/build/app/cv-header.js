@@ -13,9 +13,9 @@ class CvHeaderSection {
         return (h("header", null,
             h("div", null,
                 h("h1", null,
-                    h("slot", { name: "title" })),
-                h("div", { class: "cv-header--subheading" },
-                    h("slot", { name: "subtitle" }))),
+                    h("slot", { name: "title" }),
+                    h("div", { class: "subheading cv-header--subheading" },
+                        h("slot", { name: "subtitle" })))),
             h("div", null,
                 h("slot", null))));
     }
@@ -29,11 +29,10 @@ class CvHeaderSection {
  */
 class CvPage {
     render() {
-        return (h("div", null,
-            h("slot", null)));
+        return (h("slot", null));
     }
     static get is() { return "cv-page"; }
-    static get style() { return "cv-page {\n      display: block;\n      min-height: 100%;\n      max-width: 600px;\n      margin: 0 auto 0 auto;\n      -webkit-box-shadow: 4px 0 8px rgba(1,1,1,0.1), -4px 0 8px rgba(1,1,1,0.1);\n      box-shadow: 4px 0 8px rgba(1,1,1,0.1), -4px 0 8px rgba(1,1,1,0.1)\n    }"; }
+    static get style() { return "cv-page {\n      display: -webkit-box;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n      -webkit-flex-flow: column nowrap;\n      -ms-flex-flow: column nowrap;\n      flex-flow: column nowrap;\n      min-height: 100%;\n      margin: 0 2rem;\n    }"; }
 }
 
 export { CvHeaderSection as CvHeader, CvPage };
