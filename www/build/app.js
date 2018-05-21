@@ -120,4 +120,4 @@ function doesNotSupportsDynamicImports(dynamicImportTest) {
 
     init(win, doc, namespace, fsNamespace, resourcesUrl, appCore, appCoreSsr, appCorePolyfilled, hydratedCssClass, components);
 
-    })(window, document, "App","app",0,"app.core.js","es5-build-disabled.js","hydrated",[["cv-header","cv-header",1],["cv-page","cv-header",1]],HTMLElement.prototype);
+    })(window, document, "App","app",0,"app.core.js","app.core.pf.js","hydrated",[["cv-header","cv-header",1],["cv-header-link","cv-header",1,[["alt",1,0,1,2],["href",1,0,1,2],["image",1,0,1,2]]],["cv-header-meta","cv-header",1],["cv-page","cv-header",1],["cv-portfolio-card","cv-portfolio-card",0,[["img",1,0,1,2]]],["cv-section","cv-header",1,[["img",1,0,1,2]]],["cv-tag-cloud","cv-header"],["cv-tag-cloud-header","cv-header",1]],HTMLElement.prototype);

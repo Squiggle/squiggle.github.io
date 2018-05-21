@@ -14,52 +14,87 @@
   <body>
     <cv-page>
       <cv-header class="theme-background--neutral-lighter">
-        <span slot="title">My Name Here</span>
-        <span slot="subtitle">Subtitle</span>
+        <span slot="title">Jonathan Gilroy-Powell</span>
+        <span slot="subtitle">
+          Software Engineer
+          <br />UI Developer
+          <br />Tinkerer
+        </span>
         <cv-header-meta>
-          <div>Location</div>
-          <div>Github <a title="Github profile for Me" href="https://github.com/">https://github.com/</a></div>
-          <div>Twitter <a title="Twitter feed for Me" href="https://twitter.com/">https://github.com/</a></div>
-          <div>Stackoverflow <a title="Stackoverflow profile for Me" href="https://stackoverflow.com/">https://github.com/</a></div>
+          <cv-header-link
+            image="www/assets/images/baseline-place-24px.svg"
+            alt="Location">
+            In Basel/CH and London/UK
+          </cv-header-link>
+          <cv-header-link
+            image="www/assets/images/GitHub-Mark-32px.png"
+            alt="Github profile for Me"
+            href="https://github.com/squiggle">
+            On Github
+          </cv-header-link>
+          <cv-header-link
+            image="www/assets/images/Twitter_Logo_Blue.svg"
+            alt="Twitter feed for Me"
+            href="https://github.com/squiggle">
+            On Twitter
+          </cv-header-link>
+          <cv-header-link
+            image="www/assets/images/stackoverflow.svg"
+            alt="Stackoverflow profile"
+            href="https://stackoverflow.com/users/1034004/squiggle">
+            On StackOverflow
+          </cv-header-link>
         </cv-header-meta>
       </cv-header>
-      <section class="theme-background--neutral-light theme-font--neutral-darker">
-        <h2 class="theme-font--black">Profile</h2>
-        <p>
-            Bacon ipsum dolor amet ut est nulla spare ribs fugiat beef t-bone ut eu boudin do ball tip beef ribs elit. Qui drumstick buffalo, tenderloin aliqua landjaeger excepteur pastrami ball tip short ribs t-bone venison mollit. Doner sunt labore commodo ad. Magna meatloaf porchetta, lorem do turducken labore pancetta venison laboris brisket short ribs elit alcatra ribeye. Laborum pancetta fugiat anim occaecat buffalo.
-        </p>
-      </section>
-      <section class="theme-background--neutral theme-font--neutral-darker">
-        <h2 class="theme-font--black">Skills</h2>
-        <p>Intro paragraph</p>
-        <h3>Subsection One</h3>
-        
+      <cv-section img="www/assets/images/profile/profile.png">
+        <h2 slot="heading">Who I am</h2>
+        <div>
+          <p>
+            Bearded geek, software engineer, tinkerer and designer, I wear many hats (figuratively).
+          </p>
+          <p>
+            Raised in Yorkshire, matured in Switzerland and now relocating to London, ready for my next adventures.
+          </p>
+          <p>
+            I'm a software engineer with over a decade of web development experience across a wide variety of industries.
+            My output combines a passion for web standards, an eye for elegant design and the ability to commuinicate to both the technical and non-technical crowds.
+            I work at the point where technology meets people.
+          </p>
+        </div>
+      </cv-section>
+      <cv-section>
+        <h2 slot="heading">What I do</h2>
+        <p>I'm best described as a "full stack" software engineer.</p>
+        <h3>Technology</h3>
         <!--
           _tag cloud to be presented on a left/right scale_
-        --> 
-        <cv-tag-cloud class="font-m">
-          <span slot="left-arrow">scale_left</span>
-          <span slot="right-arrow">scale_right</span>
+        <cv-tag-cloud-header class="font-size-normal">
+          <span slot="start">front-end</span>
+          <span slot="end">back-end</span>
+        </cv-tag-cloud-header>
+        <cv-tag-cloud class="font-size-normal">
           a, b, c, d, e, f, g, h, i
         </cv-tag-cloud>
-        
-        <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-          <li>Four</li>
-          <li>Five</li>
-        </ul>
-        
-        <h3>Subsection 2</h3>
-
-        <ul>
-          <li>alpha</li>
-          <li>beta</li>
-          <li>gamma</li>
-          <li>delta</li>
-        </ul>
-      </section>
+        -->
+      </cv-section>
+      <cv-section class="theme-background--neutral-light theme-font--neutral-darker">
+        <h2 slot="heading">Portfolio</h2>
+        <!-- cv-portfolio-cards
+        <cv-portfolio-card img="">
+          <h3>Example 1.</h3>
+          <p>Small amount of text describing what was done here</p>
+          <p><a>And perhaps a link to the end result</a></p>
+        </cv-portfolio-card>
+        <cv-portfolio-card img="">
+          <h3>Example 2.</h3>
+          <p>Small amount of text describing what was done here</p>
+        </cv-portfolio-card>
+        <cv-portfolio-card img="">
+          <h3>Example 2.</h3>
+          <p>Small amount of text describing what was done here</p>
+        </cv-portfolio-card>
+      -->
+      </cv-section>
     </cv-page>    
   </body>
 </html>

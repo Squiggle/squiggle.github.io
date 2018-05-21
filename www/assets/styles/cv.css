@@ -1,99 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   padding: 0;
   margin: 0;
   min-height: 100%;
 
-  /**
-  themeing with css vars
-  */
-  --primary: rgb(188, 255, 158);
-  --primary-light: rgb(233, 255, 213);
-  --neutral: #e8e8e8;
-  --neutral-light: #f0f0f0;
-  --neutral-lighter: #f8f8f8;
-  --neutral-dark: #888;
-  --neutral-darker: #6a6a6a;
+  --colour-primary: rgb(188, 255, 158);
+  --colour-primary-dark: rgb(0, 68, 32);
+  --colour-neutral-lightest: #E0E0E0;
+  --colour-neutral-lighter: #CECECE;
+  --colour-neutral-light: #C3C3C3;
+  --colour-neutral-normal: #B4B4B4;
+  --colour-neutral-dark: #6E6E6E;
+  --colour-neutral-darker: #464646;
+
+  --font-size-largest: 56px;
+  --font-size-large: 32px;
+  --font-size-normal: 24px;
 
   font-family: 'Raleway', sans-serif;
-  font-size: 62.5%;
+  background-color: var(--colour-neutral-lightest, white);
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6 {
   padding: 0;
   margin: 0;
 }
 
+
 h1 {
-  font-size: 96px;
-}
-h1 > .subheading {
-  font-size: 34px;
+  font-size: 56px;
 }
 h2 {
-  font-size: 68px;
-  padding: 0.5rem 0;
-}
-h3 {
   font-size: 48px;
 }
+h3 {
+  font-size: 40px;
+}
 h4 {
-  font-size: 34px;
+  font-size: 32px;
 }
 h5 {
   font-size: 24px;
 }
-h6 {
-  font-size: 16px;
-}
 p, ul {
-  font-size: 16px;
-}
-.font-m {
-  font-size: 16px;
+  font-size: 24px;
 }
 
-/**
- theme classes
- */
 
- .theme-background--neutral {
-  background-color: var(--neutral);
-}
-.theme-background--neutral-light {
-  background-color: var(--neutral-light);
-}
-.theme-background--neutral-lighter {
-  background-color: var(--neutral-lighter);
-}
-.theme-background--neutral-dark {
-  background-color: var(--neutral-dark);
-}
-
-.theme-font--neutral-darker {
-  color: var(--neutral-darker);
-}
-
-.theme-font---white {
-  color: white;
-}
-.theme-font--black {
-  color: black;
-}
-
-/**
- flourishes
-*/
-cv-header, section {
-  margin: 0 -2rem;
-  padding: 0 2rem;
-}
-h2 {
-  margin: 1rem 0 0 -1rem;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  display: inline-block;
-  box-shadow: 4px 4px 12px rgba(1,1,1,0.4);
-}
-p {
-  padding: 1rem 0;
+/** styles */
+a {
+  color: var(--colour-neutral-dark, black);
+  text-decoration: none;
 }

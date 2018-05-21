@@ -27,6 +27,76 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface CvHeaderLink {
+      'alt': string;
+      'href': string;
+      'image': string;
+    }
+  }
+
+  interface HTMLCvHeaderLinkElement extends StencilComponents.CvHeaderLink, HTMLStencilElement {}
+
+  var HTMLCvHeaderLinkElement: {
+    prototype: HTMLCvHeaderLinkElement;
+    new (): HTMLCvHeaderLinkElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-header-link': HTMLCvHeaderLinkElement;
+  }
+  interface ElementTagNameMap {
+    'cv-header-link': HTMLCvHeaderLinkElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-header-link': JSXElements.CvHeaderLinkAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvHeaderLinkAttributes extends HTMLAttributes {
+      'alt'?: string;
+      'href'?: string;
+      'image'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface CvHeaderMeta {
+
+    }
+  }
+
+  interface HTMLCvHeaderMetaElement extends StencilComponents.CvHeaderMeta, HTMLStencilElement {}
+
+  var HTMLCvHeaderMetaElement: {
+    prototype: HTMLCvHeaderMetaElement;
+    new (): HTMLCvHeaderMetaElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-header-meta': HTMLCvHeaderMetaElement;
+  }
+  interface ElementTagNameMap {
+    'cv-header-meta': HTMLCvHeaderMetaElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-header-meta': JSXElements.CvHeaderMetaAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvHeaderMetaAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface CvHeader {
 
     }
@@ -84,6 +154,138 @@ declare global {
   }
   namespace JSXElements {
     export interface CvPageAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface CvPortfolioCard {
+      'img': string;
+    }
+  }
+
+  interface HTMLCvPortfolioCardElement extends StencilComponents.CvPortfolioCard, HTMLStencilElement {}
+
+  var HTMLCvPortfolioCardElement: {
+    prototype: HTMLCvPortfolioCardElement;
+    new (): HTMLCvPortfolioCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-portfolio-card': HTMLCvPortfolioCardElement;
+  }
+  interface ElementTagNameMap {
+    'cv-portfolio-card': HTMLCvPortfolioCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-portfolio-card': JSXElements.CvPortfolioCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvPortfolioCardAttributes extends HTMLAttributes {
+      'img'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface CvSection {
+      'img': string;
+    }
+  }
+
+  interface HTMLCvSectionElement extends StencilComponents.CvSection, HTMLStencilElement {}
+
+  var HTMLCvSectionElement: {
+    prototype: HTMLCvSectionElement;
+    new (): HTMLCvSectionElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-section': HTMLCvSectionElement;
+  }
+  interface ElementTagNameMap {
+    'cv-section': HTMLCvSectionElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-section': JSXElements.CvSectionAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvSectionAttributes extends HTMLAttributes {
+      'img'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface CvTagCloudHeader {
+
+    }
+  }
+
+  interface HTMLCvTagCloudHeaderElement extends StencilComponents.CvTagCloudHeader, HTMLStencilElement {}
+
+  var HTMLCvTagCloudHeaderElement: {
+    prototype: HTMLCvTagCloudHeaderElement;
+    new (): HTMLCvTagCloudHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-tag-cloud-header': HTMLCvTagCloudHeaderElement;
+  }
+  interface ElementTagNameMap {
+    'cv-tag-cloud-header': HTMLCvTagCloudHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-tag-cloud-header': JSXElements.CvTagCloudHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvTagCloudHeaderAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface CvTagCloud {
+
+    }
+  }
+
+  interface HTMLCvTagCloudElement extends StencilComponents.CvTagCloud, HTMLStencilElement {}
+
+  var HTMLCvTagCloudElement: {
+    prototype: HTMLCvTagCloudElement;
+    new (): HTMLCvTagCloudElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cv-tag-cloud': HTMLCvTagCloudElement;
+  }
+  interface ElementTagNameMap {
+    'cv-tag-cloud': HTMLCvTagCloudElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cv-tag-cloud': JSXElements.CvTagCloudAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CvTagCloudAttributes extends HTMLAttributes {
 
     }
   }
